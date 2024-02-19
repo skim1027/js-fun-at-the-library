@@ -23,7 +23,7 @@ function addBook(lib, book) {
 }
 
 function checkoutBook(lib, title, genre){
-  if (lib.shelves.hasOwnProperty(genre)){
+  if (lib.shelves.Property(genre)){
     for (var i =0; i < lib.shelves[genre].length; i++){
       if (lib.shelves[genre][i].title === title) {
         lib.shelves[genre].splice(i, 1);
